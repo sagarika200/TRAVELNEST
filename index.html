@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelNest</title>
+    <!---fonts-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <header>
+        <div class="px-3 py-2 text-bg-dark border-bottom">
+          <div class="container">
+            <div
+              class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+            >
+              <a
+                href="/"
+                class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
+              >
+                <svg
+                  class="bi me-2"
+                  width="40"
+                  height="32"
+                  role="img"
+                  aria-label="Bootstrap"
+                >
+                  <use xlink:href="#bootstrap"></use>
+                </svg>
+              </a>
+              <ul
+                class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"
+              >
+                <li>
+                  <a href="#" class="nav-link text-secondary">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="6">
+                      <use xlink:href="#home"></use>
+                    </svg>
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link text-white">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="6">
+                      <use xlink:href="#speedometer2"></use>
+                    </svg>
+                    about
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link text-white">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="6">
+                      <use xlink:href="#table"></use>
+                    </svg>
+                    Tour
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link text-white">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="6">
+                      <use xlink:href="#grid"></use>
+                    </svg>
+                    Hotels
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link text-white">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="6">
+                      <use xlink:href="#people-circle"></use>
+                    </svg>
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link text-white">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="6">
+                      <use xlink:href="#people-circle"></use>
+                    </svg>
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+    </header>
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Adventure is Worthwhile</h3>
+        <p>discover new places with us,adventure awaits</p>
+        <a href="#" class="btn">discover more</a>
+      </div>
+      <div class="controls">
+        <span class="vid-btn" src="Assets/vid-1.mp4"></span>
+        
+      </div>
+      <div class="video-container">
+        <video
+          src="Assets/vid-1.mp4"id="video-slider"loop autoplay muted></video>
+      </div>
+    </section>
+    <!-- cardslider -->
+    <div class="slider-wrapper">
+      <div class="statename">
+        <p class="partofindia">NORTH INDIA</p>
+      </div>
+      <div class="slider">
+        <div class="cards">
+          <div class="card">
+            <img src="Assets/Ram.jpeg" alt="RamMandir" />
+            <h3>UTTAR PRADESH</h3>
+            <p>Agra,Varanasi,Lucknow,Mathura,Ayodhya</p>
+            <button>View More</button>
+          </div>
+          <div class="card">
+            <img src="Assets/Spiti.jpeg" alt="Spiti" />
+            <h3>HIMACHAL PRADESH</h3>
+            <p>Spiti Valley, Shimla, Manali, Dharamshala, Kullu</p>
+            <button>View More</button>
+          </div>
+          <div class="card">
+            <img src="Assets/Hawa.jpeg" alt="Hawamahal" />
+            <h3>RAJASTHAN</h3>
+            <p>Jaipur, Jodhpur, Udaipur, Jaisalme, Pushkar</p>
+            <button>View More</button>
+          </div>
+          <div class="card">
+            <img src="Assets/Nainital.jpeg" alt="NainitalLake" />
+            <h3>UTTARAKHAND</h3>
+            <p>Nainital, Mussoorie, Haridwar, Rishikesh, Dehradun</p>
+            <button>View More</button>
+          </div>
+        </div>
+        <div class="controls">
+          <button class="prev">&lt;</button>
+          <button class="next">&gt;</button>
+        </div>
+      </div>
+      <div class="statename">
+        <p class="partofindia">SOUTH INDIA</p>
+      </div>
+      <div class="slider">
+        <div class="cards">
+          <div class="card">
+            <img src="ASSETS/Visakhapatnam.jpeg" alt="" />
+            <h3>ANDHRA PRADESH</h3>
+            <p>Visakhapatnam, Guntur, Chittoor, East & West Godavari</p>
+            <button>View More</button>
+          </div>
+          <div class="card">
+            <img src="ASSETS/Munnar.jpeg" alt="" />
+            <h3>KERALA</h3>
+            <p>Idukki, Alleppey, Ernakulam, Thiruvananthapuram</p>
+            <button>View More</button>
+          </div>
+          <div class="card">
+            <img src="ASSETS/guna.jpeg" alt="" />
+            <h3>TAMIL NADU</h3>
+            <p>Nilgiris , Kanyakumari , Madurai , Kanchipuram</p>
+            <button>View More</button>
+          </div>
+          <div class="card">
+            <img src="ASSETS/Coorg.jpeg" alt="" />
+            <h3>KARNATAKA</h3>
+            <p>Kodagu ,Mysore, Bangluru, Shimoga, Udupi</p>
+            <button>View More</button>
+          </div>
+        </div>
+        <div class="controls">
+          <button class="prev">&lt;</button>
+          <button class="next">&gt;</button>
+        </div>
+      </div>
+      <div class="statename">
+        <p class="partofindia">EAST INDIA</p>
+      </div>
+      <div class="slider">
+        <div class="cards">
+          <div class="card">
+            <img src="ASSETS/RathYatra.jpeg" alt="purirathyatra" />
+            <h3>ODISHA</h3>
+            <p>Puri, Bhubneswar, Koraput, Korank Sun Temple</p>
+            <button>View More</button>
+          </div>
+          <div class="card">
+            <img src="ASSETS/kolkata.jpeg" alt="kolkata" />
+            <h3>WEST BENGAL</h3>
+            <p>Kolkata, Darjeeling, Gangtok, Purulia, Bishnupur</p>
+            <button>View More</button>
+          </div>
+          <div class="card">
+            <img src="ASSETS/Chandil Dam.jpeg" alt="" />
+            <h3>JHARKHAND</h3>
+            <p>Bokaro, Hazaribagh, Ranchi, Tatanagar, Dhanbad</p>
+            <button>View More</button>
+          </div>
+          <div class="card">
+            <img src="ASSETS/RUINSOFNALANDA.jpeg" alt="RUINSOFNALANDA" />
+            <h3>BIHAR</h3>
+            <p>Bodh Gaya, Rajgir, Patna</p>
+            <button>View More</button>
+          </div>
+          <div class="card">
+            <img src="ASSETS/GurudongmarLake.jpeg" alt="" />
+            <h3>SIKKIM</h3>
+            <p>
+              Lachen, Singalila National Park, Gangtok, Hanuman Tok,
+              Khangchendzonga National Park
+            </p>
+            <button>View More</button>
+          </div>
+        </div>
+        <div class="controls">
+          <button class="prev">&lt;</button>
+          <button class="next">&gt;</button>
+        </div>
+      </div>
+      <div class="statename">
+        <p class="partofindia">WEST INDIA</p>
+      </div>
+      <div class="slider">
+        <div class="cards">
+          <div class="card">
+            <img src="ASSETS/GirNationalPark.jpeg" alt="" />
+            <h3>GUJARAT</h3>
+            <p>Diu, Gir National Park, Jaisalmer, Somnath Temple, Ahmedabad</p>
+            <button>View More</button>
+          </div>
+          <div class="card">
+            <img src="ASSETS/elloracaves.jpeg" alt="" />
+            <h3>MAHARASTHRA</h3>
+            <p>Pune, Mahabaleshwar, Nashik, Ajanta & Ellora Caves</p>
+            <button>View More</button>
+          </div>
+          <div class="card">
+            <img src="ASSETS/Hampi.jpeg" alt="" />
+            <h3>KARNATAKA</h3>
+            <p>Goa, Hampi, Mysore, Dandeli</p>
+            <button>View More</button>
+          </div>
+          <div class="card">
+            <img src="ASSETS/Narmada.jpeg" alt="" />
+            <h3>MADHYA PRADESH</h3>
+            <p>Mandu, Orchha, Bheadaghat</p>
+            <button>View More</button>
+          </div>
+        </div>
+        <div class="controls">
+          <button class="prev">&lt;</button>
+          <button class="next">&gt;</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
