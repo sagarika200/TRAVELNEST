@@ -1,119 +1,231 @@
-section {
-  padding: 2rem 9%;
-}
-.home {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
-  position: relative;
-  z-index: 0;
-}
-.home .content {
-  text-align: center;
-}
-.home .content h3 {
-  font-size: 2.5rem;
-  color: #fff;
-  text-transform: uppercase;
-  text-shadow: 0.3 rem 0.5 rem rgba(0, 0, 0, 0.1);
-}
-.home .content p {
-  font-size: 2.5rem;
-  color: #faf5f5;
-  padding: 0.5rem 0;
-}
-.home .video-container video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+.logo{
+  border-radius: 50%;
 }
 
-/* cardslidercss */
-.statename {
-  background-color: aquamarine;
-  border-radius: 20px;
-  margin-top: 10px;
+.btn-front{
+  background-color: black;
 }
-.partofindia {
-  padding: 10px 0px;
-  position: relative;
-  text-align: center;
-  font-family: cursive, "Franklin Gothic Medium", "Arial Narrow", Arial,
-    sans-serif;
-}
-.partofindia:hover {
-  cursor: pointer;
-  background-color: rgb(17, 179, 125);
-  border-radius: 20px;
-}
-.slider {
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-  overflow: hidden;
-}
-.cards {
+.center{
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  justify-content: center;
+  align-items: center;
 }
-.card {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 0 10px;
-  width: 300px;
-  text-align: center;
-  padding: 20px;
-  flex-shrink: 0;
-  font-family: cursive, Arial, Helvetica, sans-serif;
+.img-f{
+  width: 1250px;
+  height: 500px;
+  padding-top: 15px;
 }
-.card img {
-  height: 300px;
-  width: 100%;
-  border-radius: 10px;
+
+.header1{
+  color: #6A42C2;
 }
-.card h3 {
-  margin: 15px 0 10px;
-  font-size: 1.5em;
+
+.btn-101,
+.btn-101 *,
+.btn-101 :after,
+.btn-101 :before,
+.btn-101:after,
+.btn-101:before {
+  border: 0 solid;
+  box-sizing: border-box;
 }
-.card p {
-  font-size: 0.9em;
-  color: #666;
-  margin-bottom: 20px;
+.btn-101 {
+  -webkit-tap-highlight-color: 
+transparent;
+  -webkit-appearance: button;
+  background-color: 
+#000;
+  background-image: none;
+  color: 
+#fff;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
 }
-.card button {
-  background-color: #007bff;
-  color: white;
+.btn-101:disabled {
+  cursor: default;
+}
+.btn-101:-moz-focusring {
+  outline: auto;
+}
+.btn-101 svg {
+  vertical-align: middle;
+}
+.btn-101 [hidden] {
+  display: none;
+}
+.btn-101 {
+  --thickness: 0.3rem;
+  --roundness: 1.2rem;
+  --color: 
+#eff6ff;
+  --opacity: 0.6;
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
+  background: none;
+  background: 
+hsla(0, 0%, 100%, 0.2);
   border: none;
-  border-radius: 15px;
-  padding: 10px 20px;
+  border-radius: var(--roundness);
+  color: var(--color);
   cursor: pointer;
+  display: block;
+  font-family: Poppins, "sans-serif";
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.8rem 3rem;
+  position: relative;
 }
-.card button:hover {
-  background-color: #0056b3;
+.btn-101:hover {
+  background: 
+hsla(0, 0%, 100%, 0.3);
+  filter: brightness(1.2);
 }
-.controls {
+.btn-101:active {
+  --opacity: 0;
+  background: 
+hsla(0, 0%, 100%, 0.1);
+}
+.btn-101 svg {
+  border-radius: var(--roundness);
+  display: block;
+  filter: url(#glow);
+  height: 100%;
+  left: 0;
   position: absolute;
-  top: 50%;
+  top: 0;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
 }
-.controls button {
-  background-color: white;
-  border: none;
-  padding: 10px 15px;
+.btn-101 rect {
+  fill: none;
+  stroke: var(--color);
+  stroke-width: var(--thickness);
+  rx: var(--roundness);
+  stroke-linejoin: round;
+  stroke-dasharray: 185%;
+  stroke-dashoffset: 80;
+  -webkit-animation: snake 2s linear infinite;
+  animation: snake 2s linear infinite;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.2s;
+  width: 100%;
+}
+.btn-101:hover rect {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  opacity: var(--opacity);
+}
+@-webkit-keyframes snake {
+  to {
+    stroke-dashoffset: 370%;
+  }
+}
+@keyframes snake {
+  to {
+    stroke-dashoffset: 370%;
+  }
+}
+
+
+.btn-36,
+.btn-36 *,
+.btn-36 :after,
+.btn-36 :before,
+.btn-36:after,
+.btn-36:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-36 {
+  -webkit-tap-highlight-color: 
+transparent;
+  -webkit-appearance: button;
+  background-color: 
+#000;
+  background-image: none;
+  color: 
+#fff;
   cursor: pointer;
-  border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
 }
-.controls button:hover {
-  background-color: #f0f0f0;
+.btn-36:disabled {
+  cursor: default;
+}
+.btn-36:-moz-focusring {
+  outline: auto;
+}
+.btn-36 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-36 [hidden] {
+  display: none;
+}
+.btn-36 {
+  border: 1px solid;
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  padding: 1.1rem 4rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-36 .new,
+.btn-36 .old span {
+  font-weight: 900;
+  transition: transform 0.2s;
+}
+.btn-36 .new {
+  display: block;
+  transform: scale(0);
+}
+.btn-36:hover .new {
+  transform: scale(1);
+}
+.btn-36 .old,
+.btn-36 .old span {
+  inset: 0;
+  position: absolute;
+}
+.btn-36 .old span {
+  background: 
+#fff;
+  color: 
+#000;
+  display: block;
+  display: grid;
+  place-items: center;
+}
+.btn-36 .old span:first-child {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+}
+.btn-36 .old span:nth-child(2) {
+  -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+  clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+}
+.btn-36:hover .old span:first-child {
+  transform: translateY(-50%);
+  
+}
+.btn-36:hover .old span:nth-child(2) {
+  transform: translateY(50%);
 }
