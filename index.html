@@ -1,335 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foodie</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="px-3 py-2 text-bg-dark border-bottom">
-        <div class="container">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="#" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-              <img class="logo" src="./image/toddler_icon.webp" alt="Foodie" height="50">
-            </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelNest</title>
+    <!---fonts-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="p-3 text-bg-dark">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <img src="./Assets/WDLogo1.jpg" alt="logo" style="border-radius: 50%;" height="60px">
+          </a>
   
-            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-              <li>
-                <a href="#" class="nav-link text-secondary">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
-                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
-                    <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
-                  </svg>
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link text-white">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
-                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
-                  </svg>
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link text-white">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building-fill" viewBox="0 0 16 16">
-                    <path d="M3 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h3v-3.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V16h3a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm1 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5M4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5"/>
-                  </svg>
-                  Products
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link text-white">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-                  </svg>
-                  Customers
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="center">
-        <button class="btn-front">
-          <img class="img-f" src="./image/banner_3_2.webp" alt="Healthy_Food_VS_Junk_Food">
-        </button>
-      </div>
-      <div class="center" style="padding-top: 100px; padding-bottom: 100px;  font-family: 'Times New Roman', Times, serif";>
-        <h1>Helping your <span class="header1"> family </span>through your <span class="header1"> journey.</span></h1>
-      </div>
-      <div class="container px-4 py-5" id="hanging-icons">
-        <h2 class="pb-2 border-bottom">Most popular topics</h2>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-          <div class="col d-flex align-items-start">
-            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-              <img src="./image/liveLonger.jpg" alt="liveLonger" height="80px">
-            </div>
-            <div>
-              <h3 class="fs-2 text-body-emphasis">Live longer</h3>
-              <p>Eating nutritious foods like fruits, vegetables, and whole grains supports longevity, while junk food high in sugars and unhealthy fats increases disease risk, ultimately shortening lifespan. Balanced diets are vital for health.</p>
-              <a href="#" class="btn btn-dark">
-                Primary button
-              </a>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-              <img src="./image/imunity.webp" alt="Immunity" height="80px">
-            </div>
-            <div>
-              <h3 class="fs-2 text-body-emphasis">Immunity Boost</h3>
-              <p>Boosting immunity involves maintaining a healthy lifestyle through a balanced diet, regular physical activity, sufficient sleep, and stress management. This strengthens the body's defenses against infections and diseases effectively.</p>
-              <a href="#" class="btn btn-dark">
-                Primary button
-              </a>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-              <img src="./image/boneStrong.jpg" alt="boneStrong" height="80px">
-            </div>
-            <div>
-              <h3 class="fs-2 text-body-emphasis">Bone Strength</h3>
-              <p>A well-balanced diet, exercise, and avoiding risk factors like smoking and excessive alcohol consumption can help build and maintain healthy bones. Junk food and certain other foods can negatively impact bone health.</p>
-              <a href="#" class="btn btn-dark">
-                Primary button
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="center"><H2 style="font-family: Arial, Helvetica, sans-serif; padding-bottom: 20px;">POPULAR BRANDS</H2>      
-      </div>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col">
-            <img src="./image/Logo Nuskha.jpg" alt="Nuskha" height="150px">
-          </div>
-          <div class="col">
-            <img src="./image/Logo Patanjali.png" alt="Patanjali" height="150px">
-          </div>
-          <div class="col">
-            <img src="./image/LogoForever.jpg" alt="LogoForever" height="150px">
-          </div>
-        </div>
-      </div>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col">
-            <img src="./image/LogoHappilo.jpg" alt="LogoHappilo" height="150px>
-          </div>
-          <div class="col">
-            <img src="./image/LogoMyFitness.jpg" alt="LogoMyFitness" height="150px>
-          </div>
-          <div class="col">
-            <img src="./image/LogoYogaBar.png" alt="LogoYogaBar" height="150px">
-          </div>
-        </div>
-      </div>
-  </div>
-  <div>
-    <div class="container px-4 py-5" id="custom-cards">
-      <h2 class="pb-2 border-bottom" style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Trending articles</h2>
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Tours</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Hotels</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Blog</a></li>
+           <li><a href="#" class="nav-link px-2 text-white">Contact</a></li>
+          </ul>
   
-      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(./image/card1.png);">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Junk Food Vs Healthy Food</h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <button class="btn-101">
-                    Click
-                    <svg>
-                      <defs>
-                        <filter id="glow">
-                          <fegaussianblur result="coloredBlur" stddeviation="5"></fegaussianblur>
-                          <femerge>
-                            <femergenode in="coloredBlur"></femergenode>
-                            <femergenode in="coloredBlur"></femergenode>
-                            <femergenode in="coloredBlur"></femergenode>
-                            <femergenode in="SourceGraphic"></femergenode>
-                          </femerge>
-                        </filter>
-                      </defs>
-                      <rect />
-                    </svg>
-                  </button>
-                <li class="d-flex align-items-center">
-                  
-                  <small>3d</small>
-                </li>
-              </ul>
-            </div>
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <input type="search" class="form-control form-control-dark " type="text" placeholder="Search" aria-label="Search">
+          </form>
+         
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2">Login</button>
+            <button type="button" class="btn btn-warning">Sign-up</button>
           </div>
         </div>
-  
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(./image/card2.png);">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Junk Food - Oncquest Labs</h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <button class="btn-101">
-                    Click
-                    <svg>
-                      <defs>
-                        <filter id="glow">
-                          <fegaussianblur result="coloredBlur" stddeviation="5"></fegaussianblur>
-                          <femerge>
-                            <femergenode in="coloredBlur"></femergenode>
-                            <femergenode in="coloredBlur"></femergenode>
-                            <femergenode in="coloredBlur"></femergenode>
-                            <femergenode in="SourceGraphic"></femergenode>
-                          </femerge>
-                        </filter>
-                      </defs>
-                      <rect />
-                    </svg>
-                  </button>
-                <li class="d-flex align-items-center">
-                  
-                  <small>4d</small>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(./image/Card3.png);">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"> Impact on health</h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                </li>
-                <button class="btn-101">
-                  Click
-                  <svg>
-                    <defs>
-                      <filter id="glow">
-                        <fegaussianblur result="coloredBlur" stddeviation="5"></fegaussianblur>
-                        <femerge>
-                          <femergenode in="coloredBlur"></femergenode>
-                          <femergenode in="coloredBlur"></femergenode>
-                          <femergenode in="coloredBlur"></femergenode>
-                          <femergenode in="SourceGraphic"></femergenode>
-                        </femerge>
-                      </filter>
-                    </defs>
-                    <rect />
-                  </svg>
-                </button>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                  <small>5d</small>
-                </li>
-              </ul>
-            </div>
-          </div>
+      </div>
+   </header>
+
+ 
+
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Adventure is Worthwhile</h3>
+        <p>discover new places with us,adventure awaits</p>
+        <a href="#" class="btn">discover more</a>
+      </div>
+      <div class="controls">
+        <span class="vid-btn" src="Assets/vid-1.mp4"></span>
+        
+      </div>
+      <div class="video-container">
+        <video
+          src="Assets/vid-1.mp4"id="video-slider"loop autoplay muted></video>
+      </div>
+    </section>
+
+    <div style="padding-top: 80px; padding-bottom: 100px;" >
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-3" >
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="./Assets/hike.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="650" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-5">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 " style="font-family: 'Times New Roman', Times, serif;">What level of <span class="hiker"> hiker </span>are you?</h1>
+        <p class="lead">Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you - novice, moderate, advanced moderate, expert, or expert backpacker?</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button class="btn-24"><span>read more</span></button>
         </div>
       </div>
     </div>
   </div>
-  <div class="container px-4 py-5" id="hanging-icons">
-    <h2 class="pb-2 border-bottom" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Healthy food </h2>
-   
-  <div class="container text-center" style="padding-top: 15px;">
-    <div class="row">
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="./image/c3.png" class="card-img-top" alt="Idli Sambar" height="300px">
-          <div class="card-body">
-            <h4 class="card-text" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Idli Sambar</h4>
+
+    <!-- cardslider -->
+    <div class="slider-wrapper">
+      <div class="statename">
+        <p class="partofindia">NORTH INDIA</p>
+      </div>
+      <div class="slider">
+        <div class="cards">
+          <div class="card">
+            <img src="Assets/Ram.jpeg" alt="RamMandir" />
+            <h3>UTTAR PRADESH</h3>
+            <p>Agra,Varanasi,Lucknow,Mathura,Ayodhya</p>
+            <button>View More</button>
+          </div>
+          <div class="card">
+            <img src="Assets/Spiti.jpeg" alt="Spiti" />
+            <h3>HIMACHAL PRADESH</h3>
+            <p>Spiti Valley, Shimla, Manali, Dharamshala, Kullu</p>
+            <button>View More</button>
+          </div>
+          <div class="card">
+            <img src="Assets/Hawa.jpeg" alt="Hawamahal" />
+            <h3>RAJASTHAN</h3>
+            <p>Jaipur, Jodhpur, Udaipur, Jaisalme, Pushkar</p>
+            <button>View More</button>
+          </div>
+          <div class="card">
+            <img src="Assets/Nainital.jpeg" alt="NainitalLake" />
+            <h3>UTTARAKHAND</h3>
+            <p>Nainital, Mussoorie, Haridwar, Rishikesh, Dehradun</p>
+            <button>View More</button>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="./image/c2.png" class="card-img-top" alt="poha" height="300px">
-          <div class="card-body">
-            <h4 class="card-text" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Poha</h4>
-          </div>
+        <div class="controls">
+          <button class="prev">&lt;</button>
+          <button class="next">&gt;</button>
         </div>
       </div>
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="./image/c1.png" class="card-img-top" alt="Sprouts" height="300px">
-          <div class="card-body">
-            <h4 class="card-text" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Sprouts Salad</h4>
+      <div class="statename">
+        <p class="partofindia">SOUTH INDIA</p>
+      </div>
+      <div class="slider">
+        <div class="cards">
+          <div class="card">
+            <img src="ASSETS/Visakhapatnam.jpeg" alt="" />
+            <h3>ANDHRA PRADESH</h3>
+            <p>Visakhapatnam, Guntur, Chittoor, East & West Godavari</p>
+            <button>View More</button>
           </div>
+          <div class="card">
+            <img src="ASSETS/Munnar.jpeg" alt="" />
+            <h3>KERALA</h3>
+            <p>Idukki, Alleppey, Ernakulam, Thiruvananthapuram</p>
+            <button>View More</button>
+          </div>
+          <div class="card">
+            <img src="ASSETS/guna.jpeg" alt="" />
+            <h3>TAMIL NADU</h3>
+            <p>Nilgiris , Kanyakumari , Madurai , Kanchipuram</p>
+            <button>View More</button>
+          </div>
+          <div class="card">
+            <img src="ASSETS/Coorg.jpeg" alt="" />
+            <h3>KARNATAKA</h3>
+            <p>Kodagu ,Mysore, Bangluru, Shimoga, Udupi</p>
+            <button>View More</button>
+          </div>
+        </div>
+        <div class="controls">
+          <button class="prev">&lt;</button>
+          <button class="next">&gt;</button>
+        </div>
+      </div>
+      <div class="statename">
+        <p class="partofindia">EAST INDIA</p>
+      </div>
+      <div class="slider">
+        <div class="cards">
+          <div class="card">
+            <img src="ASSETS/RathYatra.jpeg" alt="purirathyatra" />
+            <h3>ODISHA</h3>
+            <p>Puri, Bhubneswar, Koraput, Korank Sun Temple</p>
+            <button>View More</button>
+          </div>
+          <div class="card">
+            <img src="ASSETS/kolkata.jpeg" alt="kolkata" />
+            <h3>WEST BENGAL</h3>
+            <p>Kolkata, Darjeeling, Gangtok, Purulia, Bishnupur</p>
+            <button>View More</button>
+          </div>
+          <div class="card">
+            <img src="ASSETS/Chandil Dam.jpeg" alt="" />
+            <h3>JHARKHAND</h3>
+            <p>Bokaro, Hazaribagh, Ranchi, Tatanagar, Dhanbad</p>
+            <button>View More</button>
+          </div>
+          <div class="card">
+            <img src="ASSETS/RUINSOFNALANDA.jpeg" alt="RUINSOFNALANDA" />
+            <h3>BIHAR</h3>
+            <p>Bodh Gaya, Rajgir, Patna</p>
+            <button>View More</button>
+          </div>
+          <div class="card">
+            <img src="ASSETS/GurudongmarLake.jpeg" alt="" />
+            <h3>SIKKIM</h3>
+            <p>
+              Lachen, Singalila National Park, Gangtok, Hanuman Tok,
+              Khangchendzonga National Park
+            </p>
+            <button>View More</button>
+          </div>
+        </div>
+        <div class="controls">
+          <button class="prev">&lt;</button>
+          <button class="next">&gt;</button>
+        </div>
+      </div>
+      <div class="statename">
+        <p class="partofindia">WEST INDIA</p>
+      </div>
+      <div class="slider">
+        <div class="cards">
+          <div class="card">
+            <img src="ASSETS/GirNationalPark.jpeg" alt="" />
+            <h3>GUJARAT</h3>
+            <p>Diu, Gir National Park, Jaisalmer, Somnath Temple, Ahmedabad</p>
+            <button>View More</button>
+          </div>
+          <div class="card">
+            <img src="ASSETS/elloracaves.jpeg" alt="" />
+            <h3>MAHARASTHRA</h3>
+            <p>Pune, Mahabaleshwar, Nashik, Ajanta & Ellora Caves</p>
+            <button>View More</button>
+          </div>
+          <div class="card">
+            <img src="ASSETS/Hampi.jpeg" alt="" />
+            <h3>KARNATAKA</h3>
+            <p>Goa, Hampi, Mysore, Dandeli</p>
+            <button>View More</button>
+          </div>
+          <div class="card">
+            <img src="ASSETS/Narmada.jpeg" alt="" />
+            <h3>MADHYA PRADESH</h3>
+            <p>Mandu, Orchha, Bheadaghat</p>
+            <button>View More</button>
+          </div>
+        </div>
+        <div class="controls">
+          <button class="prev">&lt;</button>
+          <button class="next">&gt;</button>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container text-center" style="padding-top: 15px;">
-    <div class="row">
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="./image/c4.png" class="card-img-top" alt="Oats Upma" height="300px">
-          <div class="card-body">
-            <h4 class="card-text" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Oats Upma</h4>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="./image/c5.png" class="card-img-top" alt="vegetable Dalia" height="300px">
-          <div class="card-body">
-            <h4 class="card-text" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Vegitable Dalia</h4>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="./image/c6.png" class="card-img-top" alt="Paneer bhurji" height="300px">
-          <div class="card-body">
-            <h4 class="card-text" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Paneer Bhurji</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-  <div class="center" style="padding-top: 100px; padding-bottom: 20px;  font-family: 'Times New Roman', Times, serif";>
-    
-        <h2>EXPERTS ANSWER TO ALL YOUR QUESTIONS</h2>
-      </div>
-  <div class="center" style="padding-bottom: 60px;">
-    <button class="btn-36">
-      <span class="new">CLICK</span>
-      <div class="old">
-        <span>FAQ</span>
-        <span aria-hidden>FAQ</span>
-      </div>
-    </button>
-  </div>
-  <footer class="py-3 my-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Products</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-    </ul>
-    <p class="text-center text-body-secondary">© 2024 Foodie, Inc</p>
-  </footer>
-
-
-
-
-  
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
